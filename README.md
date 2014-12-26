@@ -8,3 +8,9 @@ existing lab codes:
 detector works as a lightweight wireshark and send works as a lightweight ping.
 - lab4 - route.c
 works as a lightweight **static** router that loads route rules and interface info from files
+
+## Coming changes
+
+Considering coming semester that also packs with a 'network lab' course, 
+previous codes and reports will be moved into a history folder,
+that would rarely be changed.
