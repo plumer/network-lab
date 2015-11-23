@@ -1,16 +1,9 @@
 ## network-lab
 
 stores all network lab reports (and codes if any)
+`lab11` is the simple torrent client implementation.
 
-existing lab codes:
+## About codes written in fall 2014
 
-- lab2 - detector.c and send.c
-detector works as a lightweight wireshark and send works as a lightweight ping.
-- lab4 - route.c
-works as a lightweight **static** router that loads route rules and interface info from files
+Those codes were moved to `fall2014` folder.
 
-## Coming changes
-
-Considering coming semester that also packs with a 'network lab' course, 
-previous codes and reports will be moved into a history folder,
-that would rarely be changed.
