@@ -1,0 +1,255 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+A_WIN	game.h	22;"	d
+BATTLE_BODY_LEN	commons.h	80;"	d
+BATTLE_EACH_LEN	commons.h	95;"	d
+BATTLE_INFO_LEN	commons.h	87;"	d
+BATTLE_RESULT_LEN	commons.h	106;"	d
+BOARD_ITEM_LEN	commons.h	60;"	d
+B_WIN	game.h	24;"	d
+CFLAGS	Makefile	/^CFLAGS = -g$/;"	m
+CHALLENGE_ACK_LEN	commons.h	74;"	d
+CHALLENGE_BODY_LEN	commons.h	68;"	d
+DRAW	game.h	23;"	d
+ERRNO_PASSWD_FAIL	commons.h	146;"	d
+ERRNO_POOL_FULL	commons.h	143;"	d
+ERRNO_USERNAME_CONFLICT	commons.h	144;"	d
+ERRNO_USER_NOT_EXIST	commons.h	145;"	d
+FLAG_ACCEPT	commons.h	134;"	d
+FLAG_BATTLE_EACH	commons.h	139;"	d
+FLAG_BATTLE_INTRO	commons.h	138;"	d
+FLAG_FLED	commons.h	136;"	d
+FLAG_REJECT	commons.h	135;"	d
+GAMING	commons.h	43;"	d
+HEAD_LEN	commons.h	16;"	d
+IDLE	commons.h	44;"	d
+LISTENQ	server.c	19;"	d	file:
+LIZARD	game.h	17;"	d
+LOGIN_BODY_LEN	commons.h	23;"	d
+MAXLINE	server.c	16;"	d	file:
+MAX_ONLINE_RESULT	commons.h	46;"	d
+MAX_PACKAGE_LEN	commons.h	8;"	d
+MOVES_TOTAL	game.h	21;"	d
+NUM_THREADS	server.c	17;"	d	file:
+ONLINE_ITEM_LEN	commons.h	52;"	d
+OP_BATTLE_INPUT	commons.h	123;"	d
+OP_BATTLE_MSG	commons.h	124;"	d
+OP_BATTLE_RESULT	commons.h	125;"	d
+OP_BOARD_RPL	commons.h	120;"	d
+OP_BOARD_RQT	commons.h	119;"	d
+OP_CHALLENGE_RPL	commons.h	130;"	d
+OP_CHALLENGE_RQT	commons.h	129;"	d
+OP_CURR_USRLST_RPL	commons.h	118;"	d
+OP_CURR_USRLST_RQT	commons.h	117;"	d
+OP_LOGIN_RPL	commons.h	113;"	d
+OP_LOGIN_RQT	commons.h	112;"	d
+OP_LOGOUT_RPL	commons.h	115;"	d
+OP_LOGOUT_RQT	commons.h	114;"	d
+OP_REGISTER_RPL	commons.h	111;"	d
+OP_REGISTER_RQT	commons.h	110;"	d
+PAPER	game.h	15;"	d
+POOL_MAX	database.h	4;"	d
+REGIST_BODY_LEN	commons.h	40;"	d
+ROCK	game.h	14;"	d
+ROLE_CHALLENGEE	commons.h	151;"	d
+ROLE_CHALLENGER	commons.h	150;"	d
+ROLE_UNDEFINED	commons.h	152;"	d
+SCISSORS	game.h	16;"	d
+SERVER_IP	client.c	15;"	d	file:
+SERVER_PORT	client.c	12;"	d	file:
+SERV_PORT	server.c	18;"	d	file:
+SPOCK	game.h	18;"	d
+USER_GAMING	database.h	51;"	d
+USER_IDLE	database.h	52;"	d
+USER_OFFLINE	database.h	47;"	d
+USER_ONLINE	database.h	46;"	d
+__COMMONS_H__	commons.h	2;"	d
+__DATABASE_H__	database.h	2;"	d
+__GAME_H__	game.h	2;"	d
+a_draw	commons.h	/^	uint8_t a_draw;$/;"	m	struct:battle_result_t
+a_id	client.c	/^uint16_t a_id;$/;"	v
+a_id	commons.h	/^	uint16_t a_id;$/;"	m	struct:battle_each_t
+a_id	commons.h	/^	uint16_t a_id;$/;"	m	struct:battle_info_t
+a_id	commons.h	/^	uint16_t a_id;$/;"	m	struct:battle_result_t
+a_id	commons.h	/^	uint16_t a_id;$/;"	m	struct:challenge_ack_t
+a_id	commons.h	/^	uint16_t a_id;$/;"	m	struct:challenge_body_t
+a_input	client.c	/^char a_input[32];$/;"	v
+a_input	commons.h	/^	char a_input[32];$/;"	m	struct:battle_info_t
+a_lose	commons.h	/^	uint8_t a_lose;$/;"	m	struct:battle_result_t
+a_move	commons.h	/^	uint8_t a_move;$/;"	m	struct:battle_each_t
+a_name	client.c	/^char a_name[32];$/;"	v
+a_name	commons.h	/^	char a_name[32];$/;"	m	struct:challenge_body_t
+a_win	commons.h	/^	uint8_t a_win;$/;"	m	struct:battle_result_t
+ackChallenge	client.c	/^void ackChallenge(){$/;"	f
+add_new_user	database.c	/^add_new_user(const char * name, const char * passwd, const char * email) {$/;"	f
+b_draw	commons.h	/^	uint8_t b_draw;$/;"	m	struct:battle_result_t
+b_id	client.c	/^uint16_t b_id;$/;"	v
+b_id	commons.h	/^	uint16_t b_id;$/;"	m	struct:battle_each_t
+b_id	commons.h	/^	uint16_t b_id;$/;"	m	struct:battle_info_t
+b_id	commons.h	/^	uint16_t b_id;$/;"	m	struct:battle_result_t
+b_id	commons.h	/^	uint16_t b_id;$/;"	m	struct:challenge_ack_t
+b_id	commons.h	/^	uint16_t b_id;$/;"	m	struct:challenge_body_t
+b_input	client.c	/^char b_input[32];$/;"	v
+b_input	commons.h	/^	char b_input[32];$/;"	m	struct:battle_info_t
+b_lose	commons.h	/^	uint8_t b_lose;$/;"	m	struct:battle_result_t
+b_move	commons.h	/^	uint8_t b_move;$/;"	m	struct:battle_each_t
+b_name	client.c	/^char b_name[32];$/;"	v
+b_name	commons.h	/^	char b_name[32];$/;"	m	struct:challenge_body_t
+b_win	commons.h	/^	uint8_t b_win;$/;"	m	struct:battle_result_t
+battle	client.c	/^void battle(char *command){$/;"	f
+battleCount	client.c	/^int battleCount;$/;"	v
+battle_body_t	commons.h	/^struct battle_body_t {$/;"	s
+battle_each_t	commons.h	/^struct battle_each_t {$/;"	s
+battle_end	server.c	/^	int battle_end;$/;"	m	struct:thread_arg_t	file:
+battle_info_t	commons.h	/^struct battle_info_t {$/;"	s
+battle_result_t	commons.h	/^struct battle_result_t {$/;"	s
+board	client.c	/^WINDOW *board;$/;"	v
+boardCount	client.c	/^int boardCount;$/;"	v
+boardInside	client.c	/^WINDOW *boardInside;$/;"	v
+board_item_t	commons.h	/^struct board_item_t {$/;"	s
+board_list	server.c	/^int board_list(char * packet) {$/;"	f
+boarder	client.c	/^struct board_item_t boarder[128];$/;"	v	typeref:struct:board_item_t
+bs	client.c	/^struct battle_each_t bs;$/;"	v	typeref:struct:battle_each_t
+challenge	client.c	/^void challenge(int index){$/;"	f
+challengeOK	client.c	/^uint16_t challengeOK;$/;"	v
+challenge_ack_t	commons.h	/^struct challenge_ack_t {$/;"	s
+challenge_body_t	commons.h	/^struct challenge_body_t {$/;"	s
+challengee_input	server.c	/^	pthread_cond_t challengee_input;$/;"	m	struct:thread_arg_t	file:
+challenging	client.c	/^uint16_t challenging;$/;"	v
+clrWin	client.c	/^void clrWin(void *win){$/;"	f
+connfd	server.c	/^	int connfd;$/;"	m	struct:thread_arg_t	file:
+continue_running	server.c	/^static volatile int continue_running = 1;$/;"	v	file:
+curResult	client.c	/^struct battle_result_t curResult;$/;"	v	typeref:struct:battle_result_t
+email	client.c	/^char email[100];	\/\/邮箱$/;"	v
+email	commons.h	/^	char email[64];$/;"	m	struct:register_body_t
+email	database.h	/^	char email[64];$/;"	m	struct:user
+escape	client.c	/^void escape(){$/;"	f
+exitProgram	client.c	/^void exitProgram(){$/;"	f
+fight	server.c	/^int fight(char * sendline, char * a_input, char * b_input,$/;"	f
+flags	commons.h	/^	uint8_t flags;$/;"	m	struct:packet_head_t
+game_role	server.c	/^	int game_role;$/;"	m	struct:thread_arg_t	file:
+games_drawn	commons.h	/^	uint32_t games_drawn;$/;"	m	struct:login_ack_body_t
+games_drawn	database.h	/^	uint32_t games_drawn;$/;"	m	struct:user
+games_drawn	database.h	/^	uint32_t games_drawn;$/;"	m	struct:user_meta
+games_lost	commons.h	/^	uint32_t games_lost;$/;"	m	struct:login_ack_body_t
+games_lost	database.h	/^	uint32_t games_lost;$/;"	m	struct:user
+games_lost	database.h	/^	uint32_t games_lost;$/;"	m	struct:user_meta
+games_won	commons.h	/^	uint32_t games_won;$/;"	m	struct:login_ack_body_t
+games_won	database.h	/^	uint32_t games_won;$/;"	m	struct:user
+games_won	database.h	/^	uint32_t games_won;$/;"	m	struct:user_meta
+generate_hash	game.h	/^uint32_t generate_hash(char *str) {$/;"	f
+getBoard	client.c	/^void getBoard(){$/;"	f
+getOnlineList	client.c	/^void getOnlineList(){$/;"	f
+getTools	client.c	/^void getTools(){$/;"	f
+get_id_by_name	database.c	/^get_id_by_name(const char * name) {$/;"	f
+handle_client	server.c	/^void *handle_client(void *threadarg) {$/;"	f
+has_opponent_input	server.c	/^	int has_opponent_input;$/;"	m	struct:thread_arg_t	file:
+id	commons.h	/^	uint16_t id;$/;"	m	struct:battle_body_t
+id	commons.h	/^	uint16_t id;$/;"	m	struct:board_item_t
+id	commons.h	/^	uint16_t id;$/;"	m	struct:login_ack_body_t
+id	commons.h	/^	uint16_t id;$/;"	m	struct:online_item_t
+id	database.h	/^	uint16_t id;$/;"	m	struct:user
+id	database.h	/^	uint16_t id;$/;"	m	struct:user_meta
+imChallenging	client.c	/^uint16_t imChallenging;$/;"	v
+initConnect	client.c	/^void initConnect(){$/;"	f
+init_pool	database.c	/^init_pool() {$/;"	f
+input	client.c	/^WINDOW *input;$/;"	v
+input	commons.h	/^	char input[32];	\/\/battle input$/;"	m	struct:battle_body_t
+inputInside	client.c	/^WINDOW *inputInside;$/;"	v
+isGaming	database.h	/^	uint16_t isGaming;$/;"	m	struct:user
+isGaming	database.h	/^	uint16_t isGaming;$/;"	m	struct:user_meta
+isOnline	database.h	/^	uint16_t isOnline;$/;"	m	struct:user
+isOnline	database.h	/^	uint16_t isOnline;$/;"	m	struct:user_meta
+isUsed	database.h	/^	uint16_t isUsed;	\/\/ non-zero:该用户内存空间被占用$/;"	m	struct:user
+isUsed	database.h	/^	uint16_t isUsed;	\/\/ non-zero:该用户内存空间被占用$/;"	m	struct:user_meta
+is_gaming	database.c	/^is_gaming(int id) {$/;"	f
+is_online	database.c	/^is_online(int id) {$/;"	f
+load_user	database.c	/^load_user(const struct user * u) {$/;"	f
+load_user_info	server.c	/^void load_user_info() {$/;"	f
+locate_user	database.c	/^locate_user(int id) {$/;"	f
+login	client.c	/^void login(){$/;"	f
+login	server.c	/^int login(char *packet, const char *username, const char *passwd) {$/;"	f
+loginOK	client.c	/^uint16_t loginOK;$/;"	v
+login_ack_body_t	commons.h	/^struct login_ack_body_t {$/;"	s
+login_body_t	commons.h	/^struct login_body_t {$/;"	s
+main	client.c	/^int main(){$/;"	f
+main	server.c	/^int main(int argc, char **argv) {$/;"	f
+movename	client.c	/^char movename[128][32] = { "ROCK",$/;"	v
+mtx	server.c	/^	pthread_mutex_t mtx;$/;"	m	struct:thread_arg_t	file:
+myInfo	client.c	/^struct login_ack_body_t myInfo;$/;"	v	typeref:struct:login_ack_body_t
+name	commons.h	/^	char name[32];$/;"	m	struct:board_item_t
+name	commons.h	/^	char name[32];$/;"	m	struct:online_item_t
+name	database.h	/^	char name[32];$/;"	m	struct:user
+online	client.c	/^WINDOW *online;$/;"	v
+onlineCount	client.c	/^int onlineCount;$/;"	v
+onlineInside	client.c	/^WINDOW *onlineInside;$/;"	v
+online_item_t	commons.h	/^struct online_item_t{$/;"	s
+online_list	server.c	/^int online_list(char *packet) {$/;"	f
+onliner	client.c	/^struct online_item_t onliner[128];$/;"	v	typeref:struct:online_item_t
+opcode	commons.h	/^	uint8_t opcode;$/;"	m	struct:packet_head_t
+opponent_arg	server.c	/^	struct thread_arg_t * opponent_arg;$/;"	m	struct:thread_arg_t	typeref:struct:thread_arg_t::thread_arg_t	file:
+opponent_input	server.c	/^	char opponent_input[32];$/;"	m	struct:thread_arg_t	file:
+opr_cnt	commons.h	/^	uint8_t opr_cnt;$/;"	m	struct:packet_head_t
+packet_head_t	commons.h	/^struct packet_head_t {$/;"	s
+passwd	database.h	/^	char passwd[32];$/;"	m	struct:user
+password	client.c	/^char password[100];	\/\/密码$/;"	v
+password	commons.h	/^	char password[32];$/;"	m	struct:login_body_t
+password	commons.h	/^	char password[32];$/;"	m	struct:register_body_t
+process	client.c	/^WINDOW *process;$/;"	v
+processInside	client.c	/^WINDOW *processInside;$/;"	v
+rank	commons.h	/^	uint32_t rank;$/;"	m	struct:board_item_t
+rank	commons.h	/^	uint32_t rank;$/;"	m	struct:login_ack_body_t
+rank	database.h	/^	uint32_t rank;$/;"	m	struct:user
+rank	database.h	/^	uint32_t rank;$/;"	m	struct:user_meta
+recvMSG	client.c	/^void *recvMSG(){$/;"	f
+refreshBoard	client.c	/^void refreshBoard(void *win){$/;"	f
+refreshList	client.c	/^void refreshList(void *win){$/;"	f
+refreshMSG	client.c	/^void *refreshMSG(){$/;"	f
+refreshProcessAckChallenge	client.c	/^void refreshProcessAckChallenge(void *win){$/;"	f
+refreshProcessBattleEach	client.c	/^void refreshProcessBattleEach(void *win){$/;"	f
+refreshProcessBattleInfo	client.c	/^void refreshProcessBattleInfo(void *win){$/;"	f
+refreshProcessBattleResult	client.c	/^void refreshProcessBattleResult(void *win){$/;"	f
+refreshProcessChallenge	client.c	/^void refreshProcessChallenge(void *win){$/;"	f
+regist	client.c	/^void regist(){$/;"	f
+registOK	client.c	/^uint16_t registOK;$/;"	v
+register_body_t	commons.h	/^struct register_body_t {$/;"	s
+registrate	server.c	/^int registrate(char * packet, const char *username, const char * passwd, const char * email) {$/;"	f
+reserved	database.h	/^	uint32_t reserved;	\/\/ 就是为了填满160字节的，156字节看着难受$/;"	m	struct:user
+reserved	database.h	/^	uint32_t reserved;	\/\/ 就是为了填满160字节的，156字节看着难受uint16_t$/;"	m	struct:user_meta
+result	commons.h	/^	uint8_t result;	\/\/0: a win; 1: a lose 2: draw$/;"	m	struct:battle_each_t
+rpsls	game.h	/^int rpsls(int a, int b) {$/;"	f
+save_user_info	server.c	/^void save_user_info() {$/;"	f
+score	commons.h	/^	uint32_t score;$/;"	m	struct:board_item_t
+score	commons.h	/^	uint32_t score;$/;"	m	struct:login_ack_body_t
+score	database.h	/^	uint32_t score;$/;"	m	struct:user
+score	database.h	/^	uint32_t score;$/;"	m	struct:user_meta
+sendMSG	client.c	/^void sendMSG(char *message, int mlen){$/;"	f
+server_addr	client.c	/^struct sockaddr_in server_addr;	\/\/服务器地址$/;"	v	typeref:struct:sockaddr_in
+set_gaming_status	database.c	/^set_gaming_status(int id, int status) {$/;"	f
+set_online_status	database.c	/^set_online_status(int id, int status) {$/;"	f
+showIndex	client.c	/^void showIndex(){$/;"	f
+showLogin	client.c	/^void showLogin(){$/;"	f
+showMenu	client.c	/^void showMenu(){$/;"	f
+showRegist	client.c	/^void showRegist(){$/;"	f
+sockfd	client.c	/^int sockfd;			\/\/连接套接字$/;"	v
+status	commons.h	/^	uint16_t status;		\/\/ whether the user is in a game$/;"	m	struct:online_item_t
+table	game.h	/^int table[5][5] = {$/;"	v
+terminate	server.c	/^void terminate(int sig) {$/;"	f
+thread_arg_t	server.c	/^struct thread_arg_t{$/;"	s	file:
+thread_args	server.c	/^struct thread_arg_t* thread_args[NUM_THREADS];$/;"	v	typeref:struct:thread_arg_t
+thread_id	server.c	/^	long thread_id; $/;"	m	struct:thread_arg_t	file:
+thread_ids	server.c	/^pid_t thread_ids[NUM_THREADS];$/;"	v
+tools	client.c	/^WINDOW *tools;$/;"	v
+update_statistics	database.c	/^update_statistics(int id, int win, int lose, int draw) {$/;"	f
+user	database.h	/^struct user {$/;"	s
+user_cnt	database.c	/^static volatile int user_cnt = 0;	\/\/ number of users in database$/;"	v	file:
+user_id	server.c	/^	uint16_t user_id;$/;"	m	struct:thread_arg_t	file:
+user_meta	database.h	/^struct user_meta {$/;"	s
+user_pool	database.c	/^struct user user_pool[POOL_MAX];$/;"	v	typeref:struct:user
+username	client.c	/^char username[100];	\/\/用户名$/;"	v
+username	commons.h	/^	char username[32];$/;"	m	struct:login_body_t
+username	commons.h	/^	char username[32];$/;"	m	struct:register_body_t

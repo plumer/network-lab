@@ -1,0 +1,294 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALIVE_CHECK	src/pwp_daemon.h	9;"	d
+ALIVE_INTERVAL	src/pwp_daemon.h	8;"	d
+BE_DEBUG	src/process_tracker_response.c	3;"	d	file:
+BE_DICT	src/bencode.h	/^	BE_DICT,$/;"	e	enum:__anon1
+BE_INT	src/bencode.h	/^	BE_INT,$/;"	e	enum:__anon1
+BE_LIST	src/bencode.h	/^	BE_LIST,$/;"	e	enum:__anon1
+BE_STR	src/bencode.h	/^	BE_STR,$/;"	e	enum:__anon1
+BTDATA_H	src/btdata.h	9;"	d
+BT_COMPLETED	src/btdata.h	40;"	d
+BT_STARTED	src/btdata.h	38;"	d
+BT_STOPPED	src/btdata.h	39;"	d
+CC	Makefile	/^CC=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS= -std=gnu99 -g -lpthread$/;"	m
+COMPLETE	src/btdata.h	33;"	d
+Computed	src/sha1.h	/^	int Computed;			   \/* Is the digest computed?		  *\/$/;"	m	struct:SHA1Context
+Corrupted	src/sha1.h	/^	int Corrupted;			  \/* Is the message digest corruped?  *\/$/;"	m	struct:SHA1Context
+DOWNLOADING	src/btdata.h	34;"	d
+FINISHED	src/pwp_daemon.c	617;"	d	file:
+INCOMPLETE	src/btdata.h	35;"	d
+INFO_HASH	src/pwp_daemon.c	615;"	d	file:
+LIBS	Makefile	/^LIBS= -lpthread$/;"	m
+Length_High	src/sha1.h	/^	unsigned Length_High;	   \/* Message length in bits		   *\/$/;"	m	struct:SHA1Context
+Length_Low	src/sha1.h	/^	unsigned Length_Low;		\/* Message length in bits		   *\/$/;"	m	struct:SHA1Context
+MAXLINE	src/util.h	19;"	d
+MAX_CONNECTION_NUM	src/simpletorrent.c	24;"	d	file:
+MAX_DOWNLOAD_PIECES	src/btdata.h	28;"	d
+MAX_DOWNLOAD_PIECES	src/simpletorrent.c	26;"	d	file:
+MAX_PEER	src/btdata.h	30;"	d
+MAX_REQUEST	src/btdata.h	24;"	d
+MAX_REQUEST	src/simpletorrent.c	25;"	d	file:
+METADATA_MULTIPLE	src/btdata.h	43;"	d
+METADATA_SINGLE	src/btdata.h	42;"	d
+MYIP	Makefile	/^MYIP=$(shell \/sbin\/ifconfig | grep -Eo '(inet |eth ).+([0-9]*\\.){3}[0-9]*' | grep -Eo '([0-9]*\\.){3}[0-9]*' | grep -v '127.0.0.1'| grep -v '255.*')$/;"	m
+MYPORT	Makefile	/^MYPORT=10981$/;"	m
+Message_Block	src/sha1.h	/^	unsigned char Message_Block[64]; \/* 512-bit message blocks	  *\/$/;"	m	struct:SHA1Context
+Message_Block_Index	src/sha1.h	/^	int Message_Block_Index;	\/* Index into message block array   *\/$/;"	m	struct:SHA1Context
+Message_Digest	src/sha1.h	/^	unsigned Message_Digest[5]; \/* Message Digest (output)		  *\/$/;"	m	struct:SHA1Context
+OBJS	Makefile	/^OBJS=src\/util.o \\$/;"	m
+PEER_ID	src/pwp_daemon.c	616;"	d	file:
+PSTR	src/pwp_daemon.c	613;"	d	file:
+PSTRLEN	src/pwp_daemon.c	612;"	d	file:
+PWP_DAEMON_H_	src/pwp_daemon.h	2;"	d
+REQUEST_INTERVAL	src/btdata.h	26;"	d
+RESERVED	src/pwp_daemon.c	614;"	d	file:
+SHA1CircularShift	src/sha1.c	46;"	d	file:
+SHA1Context	src/sha1.h	/^typedef struct SHA1Context$/;"	s
+SHA1Context	src/sha1.h	/^} SHA1Context;$/;"	t	typeref:struct:SHA1Context
+SHA1Input	src/sha1.c	/^void SHA1Input(	 SHA1Context		 *context,$/;"	f
+SHA1PadMessage	src/sha1.c	/^void SHA1PadMessage(SHA1Context *context)$/;"	f
+SHA1ProcessMessageBlock	src/sha1.c	/^void SHA1ProcessMessageBlock(SHA1Context *context)$/;"	f
+SHA1Reset	src/sha1.c	/^void SHA1Reset(SHA1Context *context)$/;"	f
+SHA1Result	src/sha1.c	/^int SHA1Result(SHA1Context *context)$/;"	f
+SOURCES	Makefile	/^SOURCES=src\/util.c \\$/;"	m
+SUB_PIECE_LEN	src/btdata.h	37;"	d
+TARGET	Makefile	/^TARGET=simpletorrent$/;"	m
+TESTA	src/shatest.c	28;"	d	file:
+TESTB	src/shatest.c	31;"	d	file:
+TESTB_1	src/shatest.c	29;"	d	file:
+TESTB_2	src/shatest.c	30;"	d	file:
+TESTC	src/shatest.c	32;"	d	file:
+UTIL_H	src/util.h	17;"	d
+_BENCODE_H	src/bencode.h	14;"	d
+_SHA1_H_	src/sha1.h	25;"	d
+__FILEIO_H__	src/fileio.h	2;"	d
+_announce_url_t	src/btdata.h	/^typedef struct _announce_url_t {$/;"	s
+_be_decode	src/bencode.c	/^static be_node *_be_decode(const char **data, long long *data_len) {$/;"	f	file:
+_be_decode_int	src/bencode.c	/^static long long _be_decode_int(const char **data, long long *data_len) {$/;"	f	file:
+_be_decode_str	src/bencode.c	/^static char *_be_decode_str(const char **data, long long *data_len) {$/;"	f	file:
+_be_dump	src/bencode.c	/^static void _be_dump(be_node *node, ssize_t indent)$/;"	f	file:
+_be_dump_indent	src/bencode.c	/^static void _be_dump_indent(ssize_t indent)$/;"	f	file:
+_be_free_str	src/bencode.c	/^static inline void _be_free_str(char *str)$/;"	f	file:
+_bitfield	src/btdata.h	/^typedef struct _bitfield {$/;"	s
+_file_info	src/btdata.h	/^typedef struct _file_info {$/;"	s
+_file_progress	src/fileio.h	/^typedef struct _file_progress {$/;"	s
+_handshake_msg	src/btdata.h	/^typedef struct _handshake_msg {$/;"	s
+_peer_t	src/btdata.h	/^typedef struct _peer_t {$/;"	s
+_peerdata	src/btdata.h	/^typedef struct _peerdata {$/;"	s
+_piece_head	src/btdata.h	/^typedef struct _piece_head {$/;"	s
+_piece_progress	src/fileio.h	/^typedef struct _piece_progress {$/;"	s
+_piece_status	src/btdata.h	/^typedef struct _piece_status {$/;"	s
+_torrentmetadata	src/btdata.h	/^typedef struct _torrentmetadata {$/;"	s
+_tracker_data	src/btdata.h	/^typedef struct _tracker_data {$/;"	s
+_tracker_request	src/btdata.h	/^typedef struct _tracker_request {$/;"	s
+_tracker_response	src/btdata.h	/^typedef struct _tracker_response {$/;"	s
+am_choking	src/btdata.h	/^	int am_choking;        	\/\/ 我阻塞peer$/;"	m	struct:_peer_t
+am_interested	src/btdata.h	/^	int am_interested;     	\/\/ 我对peer感兴趣$/;"	m	struct:_peer_t
+announce	src/btdata.h	/^	char* announce;			\/\/ tracker的URL，动态分配$/;"	m	struct:_torrentmetadata
+announce_url_t	src/btdata.h	/^} announce_url_t;$/;"	t	typeref:struct:_announce_url_t
+append_postfix	src/fileio.c	/^append_postfix(const char * str, const char * postfix) {$/;"	f
+be_alloc	src/bencode.c	/^static be_node *be_alloc(be_type type)$/;"	f	file:
+be_decode	src/bencode.c	/^be_node *be_decode(const char *data)$/;"	f
+be_decoden	src/bencode.c	/^be_node *be_decoden(const char *data, long long len) {$/;"	f
+be_dict	src/bencode.h	/^typedef struct be_dict {$/;"	s
+be_dict	src/bencode.h	/^} be_dict;$/;"	t	typeref:struct:be_dict
+be_dump	src/bencode.c	/^void be_dump(be_node *node)$/;"	f
+be_free	src/bencode.c	/^void be_free(be_node *node)$/;"	f
+be_node	src/bencode.h	/^typedef struct be_node {$/;"	s
+be_node	src/bencode.h	/^} be_node;$/;"	t	typeref:struct:be_node
+be_str_len	src/bencode.c	/^long long be_str_len(be_node *node) {$/;"	f
+be_type	src/bencode.h	/^} be_type;$/;"	t	typeref:enum:__anon1
+begin	src/btdata.h	/^	uint32_t begin;$/;"	m	struct:_piece_head
+bitfield	src/btdata.h	/^	uint8_t *bitfield;$/;"	m	struct:_bitfield
+bitfield_t	src/btdata.h	/^} bitfield_t;$/;"	t	typeref:struct:_bitfield
+check_info_hash	src/pwp_daemon.c	/^int check_info_hash(char *info_hash){$/;"	f
+client_shutdown	src/shutdown.c	/^void client_shutdown(int sig)$/;"	f
+close_all_connections	src/pwp_daemon.c	/^void close_all_connections(){$/;"	f
+close_conn	src/pwp_daemon.c	/^void close_conn(peer_t *conn){$/;"	f
+complete	src/btdata.h	/^	int complete;		\/\/分片下载完成=1，没有下载完成=0$/;"	m	struct:_piece_status
+complete_file	src/fileio.c	/^int complete_file(file_progress_t * fp) {$/;"	f
+completed	src/fileio.h	/^	uint8_t completed;			\/\/ 是否下载完毕$/;"	m	struct:_piece_progress
+connect_to_host	src/util.c	/^int connect_to_host(char* ip, int port)$/;"	f
+conns	src/pwp_daemon.c	/^peer_t *conns = NULL;$/;"	v
+conns_num	src/pwp_daemon.c	/^int conns_num = 0;$/;"	v
+convert_endian	src/util.c	/^void convert_endian(uint8_t *str, int len){$/;"	f
+create_file	src/fileio.c	/^create_file(const char * file_name, uint32_t size) {$/;"	f
+create_progress	src/fileio.c	/^create_progress(const char * file_name, uint32_t startfrom,$/;"	f
+d	src/bencode.h	/^		struct be_dict *d;$/;"	m	union:be_node::__anon2	typeref:struct:be_node::__anon2::be_dict
+data	src/btdata.h	/^	char *data;		\/\/分片临时存放的位置，仅当req_piece_index里面有当前分片的index的时候，这个数组才不是空，$/;"	m	struct:_piece_status
+data	src/btdata.h	/^	char* data;     \/\/ B编码的字符串$/;"	m	struct:_tracker_response
+downloaded	src/btdata.h	/^	int downloaded;$/;"	m	struct:_tracker_request
+dup_peer_ip	src/pwp_daemon.c	/^int dup_peer_ip(const char * ip) {$/;"	f
+end_offset	src/fileio.h	/^	uint32_t end_offset;		\/\/ 尾一分片在哪里结束，[1, piece_length]$/;"	m	struct:_file_progress
+file_info	src/btdata.h	/^	file_info_t * file_info;\/\/ 动态分配，长度由num_files指定$/;"	m	struct:_torrentmetadata
+file_info_t	src/btdata.h	/^} file_info_t;$/;"	t	typeref:struct:_file_info
+file_len	src/util.c	/^int file_len(FILE* fp)$/;"	f
+file_name	src/fileio.h	/^	char file_name[256];		\/\/ 文件名$/;"	m	struct:_file_progress
+file_progress_t	src/fileio.h	/^} file_progress_t;$/;"	t	typeref:struct:_file_progress
+file_stream	src/fileio.h	/^	FILE * file_stream;			\/\/ 文件流指针$/;"	m	struct:_file_progress
+fillMsg	src/pwp_daemon.c	/^void fillMsg(peer_t *conn, uint8_t* msg, uint32_t piece_index, uint32_t begin, uint32_t length) {$/;"	f
+fill_handshake	src/pwp_daemon.c	/^void fill_handshake(uint8_t *hdsk_msg){$/;"	f
+find_progress	src/fileio.c	/^find_progress(const char * file_name) {$/;"	f
+g_done	src/btdata.h	/^int g_done; \/\/ 表明程序是否应该终止$/;"	v
+g_downloaded	src/btdata.h	/^int		g_downloaded;	\/\/ 收到一个分片之后进行更新$/;"	v
+g_file	src/btdata.h	/^FILE * g_file;		\/\/下载下来的文件或者做种的文件$/;"	v
+g_filedata	src/btdata.h	/^char *	g_filedata;      \/\/ 文件的实际数据【这个不再使用$/;"	v
+g_filelen	src/btdata.h	/^int		g_filelen;$/;"	v
+g_filename	src/btdata.h	/^char *	g_filename;$/;"	v
+g_files_progress	src/btdata.h	/^file_progress_t *g_files_progress;$/;"	v
+g_infohash	src/btdata.h	/^int		g_infohash[5]; \/\/ 要共享或要下载的文件的SHA1哈希值, 每个客户端同时只能处理一个文件$/;"	v
+g_left	src/btdata.h	/^int		g_left;		\/\/ 收到一个分片之后进行更新$/;"	v
+g_my_id	src/btdata.h	/^char	g_my_id[20];$/;"	v
+g_my_ip	src/btdata.h	/^char	g_my_ip[128]; \/\/ 格式为XXX.XXX.XXX.XXX, null终止$/;"	v
+g_num_pieces	src/btdata.h	/^int		g_num_pieces;$/;"	v
+g_peerport	src/btdata.h	/^int		g_peerport; \/\/ peer监听的端口号$/;"	v
+g_pieces_status	src/btdata.h	/^piece_status_t *g_pieces_status;$/;"	v
+g_sent_num	src/btdata.h	/^int g_sent_num;	\/\/已经发送的req但是没有收到piece的请求数$/;"	v
+g_sock_sent	src/btdata.h	/^int g_sock_sent[MAX_REQUEST];	\/\/当前这么多请求发送的socket$/;"	v
+g_torrentmeta	src/btdata.h	/^torrentmetadata_t* g_torrentmeta;$/;"	v
+g_tracker_ip	src/btdata.h	/^char	g_tracker_ip[16]; \/\/ tracker的IP地址, 格式为XXX.XXX.XXX.XXX(null终止)$/;"	v
+g_tracker_port	src/btdata.h	/^int		g_tracker_port;$/;"	v
+g_tracker_response	src/btdata.h	/^tracker_data * g_tracker_response;$/;"	v
+g_uploaded	src/btdata.h	/^int		g_uploaded;	\/\/ 响应一个request之后进行更新$/;"	v
+get_config_file_name	src/fileio.c	/^get_config_file_name(const char * file_name) {$/;"	f
+get_my_peer_id	src/pwp_daemon.c	/^char *get_my_peer_id() {$/;"	f
+get_peer_data	src/process_tracker_response.c	/^void get_peer_data(peerdata* peer, be_node* ben_res)$/;"	f
+get_peers	src/process_tracker_response.c	/^void get_peers(tracker_data * td, be_node * peer_list) {$/;"	f
+get_temp_file_name	src/fileio.c	/^get_temp_file_name(const char * file_name) {$/;"	f
+get_tracker_data	src/process_tracker_response.c	/^tracker_data* get_tracker_data(char* data, int len)$/;"	f
+handshake	src/pwp_daemon.c	/^int handshake(int sockfd, uint8_t *hdsk_msg){$/;"	f
+handshake_msg_t	src/btdata.h	/^} handshake_msg_t;$/;"	t	typeref:struct:_handshake_msg
+hostname	src/btdata.h	/^	char* hostname;$/;"	m	struct:_announce_url_t
+i	src/bencode.h	/^		long long i;$/;"	m	union:be_node::__anon2
+id	src/btdata.h	/^	char id[21]; \/\/ 20用于null终止符$/;"	m	struct:_peerdata
+id	src/btdata.h	/^	uint8_t id;$/;"	m	struct:_bitfield
+id	src/btdata.h	/^	uint8_t id;$/;"	m	struct:_piece_head
+info_hash	src/btdata.h	/^	int info_hash[5];$/;"	m	struct:_tracker_request
+info_hash	src/btdata.h	/^	uint8_t info_hash[20];$/;"	m	struct:_handshake_msg
+info_hash	src/btdata.h	/^	unsigned char info_hash[20];		\/\/ torrent的info_hash值(info键对应值的SHA1哈希值)$/;"	m	struct:_torrentmetadata
+init	src/simpletorrent.c	/^void init(){$/;"	f
+interval	src/btdata.h	/^	int interval;$/;"	m	struct:_tracker_data
+ip	src/btdata.h	/^	char *ip; \/\/ Null终止$/;"	m	struct:_peerdata
+ip	src/btdata.h	/^	char ip[16]; \/\/ 自己的IP地址, 格式为XXX.XXX.XXX.XXX, 最后以'\\0'结尾$/;"	m	struct:_tracker_request
+is_file_complete	src/pwp_daemon.c	/^int is_file_complete(){$/;"	f
+is_piece_complete	src/fileio.c	/^int is_piece_complete(uint32_t piece_index) {$/;"	f
+is_piece_socket	src/pwp_daemon.c	/^int is_piece_socket(int socket, int piece){$/;"	f
+is_req_socket	src/pwp_daemon.c	/^int is_req_socket(int socket){$/;"	f
+is_seed	src/btdata.h	/^	int is_seed;		\/\/ 我是种子=1, 不是种子=0$/;"	m	struct:_peer_t
+keep_alive	src/pwp_daemon.c	/^void *keep_alive(void *conn){$/;"	f
+key	src/bencode.h	/^	char *key;$/;"	m	struct:be_dict
+l	src/bencode.h	/^		struct be_node **l;$/;"	m	union:be_node::__anon2	typeref:struct:be_node::__anon2::be_node
+left	src/btdata.h	/^	int left;$/;"	m	struct:_tracker_request
+len	src/btdata.h	/^	uint32_t len;$/;"	m	struct:_bitfield
+length	src/btdata.h	/^	int length;			\/\/ 文件长度, 以字节为单位$/;"	m	struct:_torrentmetadata
+length	src/btdata.h	/^	unsigned long long length;\/\/ 文件长度，以字节为单位$/;"	m	struct:_file_info
+length	src/fileio.h	/^	uint32_t length;			\/\/ 文件长度$/;"	m	struct:_file_progress
+length_prefix	src/btdata.h	/^	uint32_t length_prefix;$/;"	m	struct:_piece_head
+listen_to_peer	src/simpletorrent.c	/^void *listen_to_peer(){$/;"	f
+main	src/bencodetest.c	/^int main(int argc, char ** argv) {$/;"	f
+main	src/fileiotest.c	/^int main() {$/;"	f
+main	src/ptftest.c	/^int main(int argc, char ** argv) {$/;"	f
+main	src/shatest.c	/^int main()$/;"	f
+main	src/simpletorrent.c	/^int main(int argc, char **argv) {$/;"	f
+make_listen_port	src/util.c	/^int make_listen_port(int port)$/;"	f
+make_tracker_request	src/make_tracker_request.c	/^char* make_tracker_request(int event, int* mlen)$/;"	f
+max	src/util.h	20;"	d
+min	src/util.h	21;"	d
+mode	src/btdata.h	/^	int mode;				\/\/ METADATA_SINGLE or METADATA_MULTIPLE$/;"	m	struct:_torrentmetadata
+mutex	src/fileio.h	/^	pthread_mutex_t mutex;		\/\/ 读和写的互斥变量$/;"	m	struct:_file_progress
+my_peer_id	src/btdata.h	/^	char my_peer_id[20];	\/\/ 我的peer id$/;"	m	struct:_peer_t
+name	src/btdata.h	/^	char* name;				\/\/ 种子名$/;"	m	struct:_torrentmetadata
+new_peer_t	src/pwp_daemon.c	/^peer_t *new_peer_t(){$/;"	f
+next	src/btdata.h	/^	struct _peer_t *next;	\/\/ 使用一个链表来保存所有的连接，所以需要这个域$/;"	m	struct:_peer_t	typeref:struct:_peer_t::_peer_t
+num_files	src/btdata.h	/^	int num_files;$/;"	m	struct:_torrentmetadata
+num_pieces	src/btdata.h	/^	int num_pieces;			\/\/ 分片数量$/;"	m	struct:_torrentmetadata
+num_pieces	src/fileio.h	/^	uint32_t num_pieces;		\/\/ 分片数量$/;"	m	struct:_file_progress
+numpeers	src/btdata.h	/^	int numpeers;$/;"	m	struct:_tracker_data
+owner_num	src/btdata.h	/^	int owner_num;		\/\/现在存了几个socket，必须<=5$/;"	m	struct:_piece_status
+owners	src/btdata.h	/^	int owners[MAX_REQUEST];		\/\/哪些peer拥有这个分片，初始化为-1，实际记录的是socket$/;"	m	struct:_piece_status
+parse_announce_url	src/parse_announce_url.c	/^announce_url_t* parse_announce_url(char* announce)$/;"	f
+parsetorrentfile	src/parsetorrentfile.c	/^torrentmetadata_t* parsetorrentfile(char* filename)$/;"	f
+path	src/btdata.h	/^	char * path;		\/\/ 文件名，动态分配$/;"	m	struct:_file_info
+peerBitfield	src/pwp_daemon.c	/^int peerBitfield(peer_t *conn, uint8_t *bf, uint32_t bf_len) {$/;"	f
+peerHave	src/pwp_daemon.c	/^void peerHave(peer_t *info, uint32_t piece_index) {$/;"	f
+peer_choking	src/btdata.h	/^	int peer_choking;       \/\/ peer阻塞我$/;"	m	struct:_peer_t
+peer_handler	src/pwp_daemon.c	/^void *peer_handler(void *conn){$/;"	f
+peer_id	src/btdata.h	/^	char peer_id[20];  	\/\/ 对方的peer id$/;"	m	struct:_peer_t
+peer_id	src/btdata.h	/^	char peer_id[20];$/;"	m	struct:_tracker_request
+peer_id	src/btdata.h	/^	uint8_t peer_id[20];$/;"	m	struct:_handshake_msg
+peer_interested	src/btdata.h	/^	int peer_interested;  	\/\/ peer对我感兴趣$/;"	m	struct:_peer_t
+peer_ip	src/btdata.h	/^	char peer_ip[16];$/;"	m	struct:_peer_t
+peer_t	src/btdata.h	/^} peer_t;$/;"	t	typeref:struct:_peer_t
+peer_timeout_checker	src/pwp_daemon.c	/^void *peer_timeout_checker(void *arg){$/;"	f
+peerdata	src/btdata.h	/^} peerdata;$/;"	t	typeref:struct:_peerdata
+peers	src/btdata.h	/^	peerdata* peers;$/;"	m	struct:_tracker_data
+piece_h	src/btdata.h	/^} piece_h;$/;"	t	typeref:struct:_piece_head
+piece_index	src/btdata.h	/^	uint32_t piece_index;$/;"	m	struct:_piece_head
+piece_index	src/fileio.h	/^	uint32_t piece_index;		\/\/ 分片号$/;"	m	struct:_piece_progress
+piece_len	src/btdata.h	/^	int piece_len;			\/\/ 每一个分片的字节数$/;"	m	struct:_torrentmetadata
+piece_length	src/fileio.h	/^	uint32_t piece_length;		\/\/ 分片长度，一般是2的整次幂$/;"	m	struct:_file_progress
+piece_mutex	src/btdata.h	/^	pthread_mutex_t	piece_mutex;	\/\/互斥变量$/;"	m	struct:_piece_status
+piece_progress	src/fileio.h	/^	piece_progress_t * piece_progress;			\/\/ 上述两个信息的数组，长度为num_pieces$/;"	m	struct:_file_progress
+piece_progress_t	src/fileio.h	/^} piece_progress_t;$/;"	t	typeref:struct:_piece_progress
+piece_status_t	src/btdata.h	/^} piece_status_t;$/;"	t	typeref:struct:_piece_status
+pieces	src/btdata.h	/^	char* pieces;			\/\/ 针对所有分片的20字节长的SHA1哈希值连接而成的字符串，根据num_pieces进行动态分配$/;"	m	struct:_torrentmetadata
+port	src/btdata.h	/^	int port;$/;"	m	struct:_announce_url_t
+port	src/btdata.h	/^	int port;$/;"	m	struct:_peerdata
+port	src/btdata.h	/^	int port;$/;"	m	struct:_tracker_request
+preprocess_tracker_response	src/process_tracker_response.c	/^tracker_response* preprocess_tracker_response(int sockfd)$/;"	f
+print_pos	src/util.h	22;"	d
+printfile	src/bencodetest.c	/^void printfile(be_node *n, int indent) {$/;"	f
+printindent	src/bencodetest.c	/^void printindent(int i) {$/;"	f
+pstr	src/btdata.h	/^	uint8_t pstr[19];$/;"	m	struct:_handshake_msg
+pstrlen	src/btdata.h	/^	uint8_t pstrlen;$/;"	m	struct:_handshake_msg
+read_file	src/fileio.c	/^void read_file(uint8_t * msg, int offset, int length) {$/;"	f
+read_progress	src/fileio.c	/^read_progress(const char * file_name) {$/;"	f
+readn	src/util.c	/^int readn(int fd, char *bp, size_t len)$/;"	f
+recvPiece	src/pwp_daemon.c	/^void recvPiece(peer_t *conn, uint32_t piece_index, uint32_t begin, uint32_t length, uint8_t *block) {$/;"	f
+recvline	src/util.c	/^int recvline(int fd, char **line)$/;"	f
+recvlinef	src/util.c	/^int recvlinef(int fd, char *format, ...)$/;"	f
+recvn	src/util.c	/^int recvn(int fd, char *buffer, int n, int flag){$/;"	f
+req_piece_index	src/btdata.h	/^int req_piece_index[MAX_DOWNLOAD_PIECES];	\/\/当前所正在下载的分片的index，初始化为-1$/;"	v
+req_piece_mutex	src/btdata.h	/^pthread_mutex_t req_piece_mutex;$/;"	v
+req_piece_num	src/btdata.h	/^int req_piece_num;	\/\/已经开始下载，但是没有下载完成的分片数$/;"	v
+request_cond	src/btdata.h	/^pthread_cond_t request_cond;$/;"	v
+request_mutex	src/btdata.h	/^pthread_mutex_t request_mutex;$/;"	v
+request_piece	src/btdata.h	/^	int request_piece;	\/\/ 当前我请求下载的分片序号$/;"	m	struct:_peer_t
+request_piece	src/pwp_daemon.c	/^void request_piece(peer_t *tcb, int count){$/;"	f
+reserved	src/btdata.h	/^	uint8_t reserved[8];$/;"	m	struct:_handshake_msg
+reverse_byte_orderi	src/util.c	/^int reverse_byte_orderi(int i)$/;"	f
+s	src/bencode.h	/^		char *s;$/;"	m	union:be_node::__anon2
+save_piece	src/fileio.c	/^int save_piece(int piece_index) {$/;"	f
+select_piece	src/pwp_daemon.c	/^int select_piece(peer_t *tcb){$/;"	f
+send_bitfield	src/pwp_daemon.c	/^void send_bitfield(peer_t *tcb){$/;"	f
+send_chock	src/pwp_daemon.c	/^void send_chock(peer_t *tcb){$/;"	f
+send_have	src/pwp_daemon.c	/^void send_have(int piece_index){$/;"	f
+send_interested	src/pwp_daemon.c	/^void send_interested(peer_t *tcb){$/;"	f
+send_not_interested	src/pwp_daemon.c	/^void send_not_interested(){$/;"	f
+send_piece	src/pwp_daemon.c	/^void send_piece(peer_t *tcb, uint32_t length, uint32_t piece_index, uint32_t begin){$/;"	f
+send_request	src/pwp_daemon.c	/^void send_request(peer_t *tcb, uint32_t begin){$/;"	f
+send_unchock	src/pwp_daemon.c	/^void send_unchock(peer_t *tcb){$/;"	f
+size	src/btdata.h	/^	int size;       \/\/ B编码字符串的字节数$/;"	m	struct:_tracker_response
+sockfd	src/btdata.h	/^	int sockfd;$/;"	m	struct:_peer_t
+start_offset	src/fileio.h	/^	uint32_t start_offset;		\/\/ 头一分片从哪里开始，[0, piece_length - 1]$/;"	m	struct:_file_progress
+sub_len	src/btdata.h	/^	uint32_t sub_len;	\/\/子分片长度$/;"	m	struct:_piece_status
+sub_num	src/btdata.h	/^	uint32_t sub_num;	\/\/子分片数目$/;"	m	struct:_piece_status
+sub_status	src/btdata.h	/^	int *sub_status;	\/\/子分片状态$/;"	m	struct:_piece_status
+timestamp	src/btdata.h	/^	clock_t timestamp;	\/\/ 时间戳，用于keep alive$/;"	m	struct:_peer_t
+torrentmetadata_t	src/btdata.h	/^} torrentmetadata_t;$/;"	t	typeref:struct:_torrentmetadata
+tracker_data	src/btdata.h	/^} tracker_data;$/;"	t	typeref:struct:_tracker_data
+tracker_request	src/btdata.h	/^} tracker_request;$/;"	t	typeref:struct:_tracker_request
+tracker_response	src/btdata.h	/^} tracker_response;$/;"	t	typeref:struct:_tracker_response
+type	src/bencode.h	/^	be_type type;$/;"	m	struct:be_node
+uploaded	src/btdata.h	/^	int uploaded;$/;"	m	struct:_tracker_request
+val	src/bencode.h	/^	struct be_node *val;$/;"	m	struct:be_dict	typeref:struct:be_dict::be_node
+val	src/bencode.h	/^	} val;$/;"	m	struct:be_node	typeref:union:be_node::__anon2
+wait_handshake	src/simpletorrent.c	/^void *wait_handshake(void *sock){$/;"	f
+write_file	src/fileio.c	/^write_file(file_progress_t *fp, const char * content, uint32_t start, uint32_t length) {$/;"	f
+write_progress	src/fileio.c	/^write_progress(file_progress_t *dp) {$/;"	f

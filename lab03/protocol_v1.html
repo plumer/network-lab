@@ -1,0 +1,265 @@
+<h1>客户--客户</h1>
+
+<h2>包类型：需要的信息（挑战者：A；被挑战者：B）</h2>
+
+<p><br /></p>
+
+<h3>挑战请求（A挑战B）：【A->S】【S->B】</h3>
+
+<p><code>
+[opcode=OP_CHALLENGE_RQT]
+[flags=0]
+[opr_cnt=4]
+[id = A-ID]
+[id = B-ID]
+[name = A-username]
+[name = B-username]
+</code></p>
+
+<h4>【A】：“您向B发起了挑战，等待B响应...”</h4>
+
+<h4>【S】：“A向B发起了挑战”</h4>
+
+<h4>【B】：“A向您发起了挑战，是否接受？”</h4>
+
+<p><br />  </p>
+
+<h3>挑战回应（B拒绝A的挑战）：【B->S】【S->A】</h3>
+
+<p><code>
+[opcode=OP_CHALLENGE_RPL]
+[flags=FLAG_REJECT]
+[opr_cnt=2]
+[id = A-ID]
+[id = B-ID]
+</code></p>
+
+<h4>【A】：“B拒绝了您的挑战”</h4>
+
+<h4>【S】：“B拒绝了A的挑战”</h4>
+
+<h4>【B】：“您拒绝了A的挑战”</h4>
+
+<p><br />  </p>
+
+<h3>挑战回应（B接受A的挑战）：【B->S】【S->A】</h3>
+
+<p><code>
+[opcode=OP_CHALLENGE_RPL]
+[flags=FLAG_ACCEPT]
+[opr_cnt=2]
+[id = A-ID]
+[id = A-ID]
+</code></p>
+
+<h4>【A】：“B接受了您的挑战，战斗开始”</h4>
+
+<h4>【S】：“B接受了A的挑战，AB对战开始”</h4>
+
+<h4>【B】：“您接受了B的挑战，战斗开始”</h4>
+
+<p><br />  </p>
+
+<h3>战斗输入1（A挑战B，B接受挑战）：【A->S】</h3>
+
+<p><code>
+[opcode=OP_BATTLE_INPUT]
+[flags=0]
+[opr_cnt=2]
+[A-ID]
+[A-input]
+</code></p>
+
+<h4>【A】：“您输入XXX，等待B的输入”</h4>
+
+<h3>战斗输入2（A挑战B，B接受挑战）：【B->S】</h3>
+
+<p><code>
+[opcode=OP_BATTLE_INPUT]
+[flags=0]
+[opr_cnt=2]
+[B-ID]
+[B-input]
+</code></p>
+
+<h4>【S】：“A输入XXX，B输入XXX，战斗开始”</h4>
+
+<p><br />  </p>
+
+<h3>战斗开始（A挑战B，B接受挑战）：【S->A】【S->B】</h3>
+
+<p><code>
+[opcode= OP_BATTLE_MSG ]
+[flags= FLAG_BATTLE_INTRO]
+[opr_cnt=4]
+[A-ID]
+[A-input]
+[B-ID]
+[B-input]
+</code></p>
+
+<h4>【S】：“A输入XXX，B输入XXX，战斗开始”</h4>
+
+<h4>【A】：“您输入XXX，B输入XXX，战斗开始”</h4>
+
+<h4>【B】：“A输入XXX，您输入XXX，战斗开始”</h4>
+
+<p><br />  </p>
+
+<h3>战斗过程（A挑战B）：</h3>
+
+<p><code>
+[opcode= OP_BATTLE_MSG]
+[flags= FLAG_BATTLE_EACH]
+[opr_cnt=5]
+[userid]
+[move_name]
+[userid]
+[move_name]
+[winner-id]
+</code></p>
+
+<h5>winner-id: 0 - 前者赢， 1 - 平手， 2 - 后者赢</h5>
+
+<h4>【S】：“A出XX，B出XX，结果XX”</h4>
+
+<h4>【A】：“本局您出XXX，B出XXX，结果XX”</h4>
+
+<h4>【B】：“本局A出XXX，您出XXX，结果XX”</h4>
+
+<p><br />  </p>
+
+<h3>战斗结束：A的ID&amp;结果、B的ID&amp;结果</h3>
+
+<p><code>
+[opcode=OP_BATTLE_RESULT]
+[flags=0]
+[opr_cnt=8]
+[user_id]
+[win]
+[lose]
+[draw]
+[user_id]
+[win]
+[lose]
+[draw]
+</code></p>
+
+<h4>【S】：“A对战B，A胜X局，B胜Y局，平Z局，A/B获胜”</h4>
+
+<h4>【A】：“您挑战B，胜X局，负Y局，平Z局，您赢/输了”</h4>
+
+<h4>【B】：“A挑战您，胜X局，负Y局，平Z局，您赢/输了”</h4>
+
+<h1>客户--服务器</h1>
+
+<h2>包类型：需要的信息（客户：C；服务器：S）</h2>
+
+<h3>查看当前在线列表：</h3>
+
+<h4>request</h4>
+
+<p><code>
+[opcode=OP_CURR_USRLST_RQT]
+[flags=0]
+[opr_cnt=0]
+</code></p>
+
+<h4>reply</h4>
+
+<p><code>
+[opcode=OP_CURR_USRLST_RPL]
+[flags=0]
+[opr_cnt=number_of_returned_entries]
+[[id][gamingstatus][username]]
+        ^ multiple times
+</code>
+ <br />  </p>
+
+<h3>查看排行榜</h3>
+
+<h4>request</h4>
+
+<p><code>
+[opcode=OP_RANKING_RQT]
+[flags=0]
+[opr_cnt=0]
+</code></p>
+
+<h4>reply</h4>
+
+<p><code>
+[opcode=OP_RANKING_RPL]
+[flags=0]
+[opr_cnt=number_of_returned_entries]
+[[id][username][score][ranking]] &lt;- packed into a struct
+        ^ multiple times
+</code>
+ <br />  </p>
+
+<h3>注册</h3>
+
+<h4>request</h4>
+
+<p><code>
+[opcode=OP_REGISTER_RQT]
+[flags=0]
+[opr_cnt=3]
+[C-ID:length = 32]
+[C-PWD:len=32]
+[C-EM:len=64]
+</code></p>
+
+<h4>reply</h4>
+
+<h5>success</h5>
+
+<p><code>
+[opcode=OP_REGISTER_RPL]
+[flags=FLAG_ACCEPT]
+[opr_cnt=1]
+[0]
+</code></p>
+
+<h5>failure</h5>
+
+<p><code>
+[opcode=OP_REGISTER_RPL]
+[flags=FLAG_REJECT]
+[opr_cnt=1]
+[ERROR-CODE,refer to error number]
+</code>
+ <br />  </p>
+
+<h3>登录</h3>
+
+<h4>request</h4>
+
+<p><code>
+[opcode=OP_LOGIN_RQT]
+[flags=0]
+[opr_cnt=2]
+[C-ID:len=32]
+[C-PWD:len=32]
+</code></p>
+
+<h4>reply</h4>
+
+<h5>success</h5>
+
+<p><code>
+[opcode=OP_LOGIN_RPL]
+[flags=FLAG_ACCEPT]
+[opr_cnt=1]
+[userinfo]
+</code></p>
+
+<h5>failure</h5>
+
+<p><code>
+[opcode=OP_LOGIN_RPL]
+[flags=FLAG_REJECT]
+[opr_cnt=1]
+[ERROR-CODE, refer to error number]
+</code>
+ <br />  </p>
